@@ -1,10 +1,15 @@
 package objetos;
 
+/**
+ * 
+ * @author cassiano.langer
+ *
+ */
 public class Tv {
 
 	private final int polegadas = 49;
 	private boolean status = false;
-	private final String cor = "preta";
+	//private final String cor = "preta";
 	private int volume = 50;
 	private int canal = 1;
 	
@@ -23,7 +28,10 @@ public class Tv {
 	public int getVolume() {
 		return volume;
 	}
-
+/*
+ * caso status falso, nao pode ser alterado o volume
+ * 
+ */
 	public void setVolume(int volume) {
 		if(isStatus() == true) {
 			this.volume = volume;
